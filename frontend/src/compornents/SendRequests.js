@@ -2,6 +2,7 @@ import React,{useState}  from "react"
 import axios from "axios";
 import './AddVehicle.css'
 import {storage} from "./firebase";
+import Header from '../compornents/header';
 
 
 
@@ -161,6 +162,9 @@ export default function SendRequests() {
 
 
         return(
+          <div>
+            <Header/>
+          
 
                 <div class="body" >
                  <br/><br/>
@@ -334,7 +338,7 @@ export default function SendRequests() {
                     </div>
                 </form>
    </div>
-      
+   </div>
 
         )
 

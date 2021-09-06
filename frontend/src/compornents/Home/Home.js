@@ -7,6 +7,8 @@ import '../Home/Home.css';
 import Header from '../../compornents/header';
 
 
+
+
 export default function AddVehicle() {
 
 
@@ -101,8 +103,10 @@ export default function AddVehicle() {
                   <p class="mb-5">tahiketahiketahiketahiketahiketahiketahike tahiketahiketahi
                   ketahiketahike tahiketahiketahiketahiketahiketah
                   iketahiketahiketahiketahiketahike tahiketahiketahiketahiketahiketahiketahike</p>
-                  
-                  <input type="submit" value="Start Now" href="/DisplayAllVehicles" class="btn btn-primary btn-block py-3" /> 
+
+                  {/* <button class="btn btn-primary btn-block py-3">submit</button> */}
+                  <span><a href="#sendRequests"></a></span>
+                  {/* <input type="" onclick="console.log('The link was clicked.')" value="Start Now"   />  */}
               </div>
             </div>
           </div>

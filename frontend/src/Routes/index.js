@@ -4,6 +4,7 @@ import EditVehicles from '../compornents/EditVehicles';
 import Home from '../compornents/Home/Home';
 import VehicleRequest from '../compornents/VehicleRequest/VehicleRequest';
 import ViewReports from '../compornents/ViewReports/ViewReports';
+import SendRequests from '../compornents/SendRequests';
 
 let routes = [
 
@@ -41,6 +42,12 @@ let routes = [
         path: "/vehicleRequest",
         name: "VehicleRequest",
         component: VehicleRequest,
+        exact: true,
+    },
+    {
+        path: "/sendRequests",
+        name: "SendRequests",
+        component: SendRequests,
         exact: true,
     }
 
