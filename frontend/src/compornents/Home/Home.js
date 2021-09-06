@@ -4,7 +4,7 @@ import image2 from '../img/car2.png';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css';
 import '../Home/Home.css'
-import sendRequest from './compornents/SendRequest.js';
+
 
 export default function AddVehicle() {
 
