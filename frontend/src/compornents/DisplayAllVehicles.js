@@ -36,7 +36,7 @@ let Count = 0
                 <a class="navbar-brand"></a>
                 <form class="form-inline">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="search btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
                 </nav>
             </div>
@@ -62,7 +62,7 @@ let Count = 0
                                     <td> {vehicles.LicensePlateNumber} </td>
                                     <td> {vehicles.vehicleOwner} </td>
                                     <td> {vehicles.vehicleType} </td>
-                                    <td> <button type="submit" class="btn btn-dark mb-2" ><Link to ={'/EditVehicles'}> Edit</Link> </button> </td>
+                                    <td> <button type="submit" class="edit btn-dark mb-2 align-center" ><Link to ={'/EditVehicles'}> Edit</Link> </button> </td>
                                 </tr>
 
                             ))}

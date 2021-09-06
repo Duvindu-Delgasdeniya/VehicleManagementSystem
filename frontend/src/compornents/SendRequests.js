@@ -17,7 +17,9 @@ export default function SendRequests() {
 
   const [LicensePlateNumber, setLicensePlateNumber] = useState("");
  
-  const [vehicleRate, setvehicleRate] = useState("");
+  const [InsuranceCompany , setInsuranceCompany ] = useState("");
+
+  const [InsuranceType, setInsuranceType] = useState("");
 
   const [Discription, setDiscription] = useState("");
 
@@ -43,7 +45,7 @@ export default function SendRequests() {
   console.log(File);
 
     
-    const newVehicle={
+    const newRequest={
 
       vehicleOwner,
 
@@ -55,7 +57,9 @@ export default function SendRequests() {
 
       LicensePlateNumber, 
 
-      vehicleRate, 
+      InsuranceCompany ,
+
+      InsuranceType,
 
       Discription,
 
@@ -69,7 +73,7 @@ export default function SendRequests() {
 
     }
 
-    axios.post("http://localhost:8070/vehicle/add",newVehicle).then(() =>{
+    axios.post("http://localhost:8070/request/add",newRequest).then(() =>{
         alert("A new vehicle is added")
     }).catch((err) =>{
         alert(err)
@@ -243,6 +247,24 @@ export default function SendRequests() {
                                             onChange={(e) =>{
 
                                               setLicensePlateNumber(e.target.value);
+
+                                            }}/>
+                                    </div>
+
+                                    <div class="form-group">
+                                            <input type="InsuranceCompany" class="form-control" id="InsuranceCompany" aria-describedby=" " placeholder="Name of the Insurance Company"
+                                            onChange={(e) =>{
+
+                                              setInsuranceCompany(e.target.value);
+
+                                            }}/>
+                                    </div>
+
+                                    <div class="form-group">
+                                            <input type="InsuranceType" class="form-control" id="InsuranceType" aria-describedby=" " placeholder="Enter the Insurance Type"
+                                            onChange={(e) =>{
+
+                                              setInsuranceType(e.target.value);
 
                                             }}/>
                                     </div>
