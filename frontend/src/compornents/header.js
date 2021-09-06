@@ -14,7 +14,8 @@ return(
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item ">
+      {/* active */}
         <a class="nav-link" href="#addvehicle">Add Vehicles <span class="sr-only"></span></a>
       </li>
       <li class="nav-item">
@@ -22,10 +23,10 @@ return(
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#">Vehicle Request</a>
+        <a class="nav-link" href="#VehicleRequest">Vehicle Request</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">View Reports</a>
+        <a class="nav-link" href="#ViewReports">View Reports</a>
       </li>
     </ul>
     

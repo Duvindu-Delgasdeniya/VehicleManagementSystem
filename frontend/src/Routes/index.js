@@ -2,7 +2,8 @@ import AddVehicle from '../compornents/AddVehicle';
 import DisplayAllVehicles from '../compornents/DisplayAllVehicles';
 import EditVehicles from '../compornents/EditVehicles';
 import Home from '../compornents/Home/Home';
-
+import VehicleRequest from '../compornents/VehicleRequest/VehicleRequest';
+import ViewReports from '../compornents/ViewReports/ViewReports';
 
 let routes = [
 
@@ -28,6 +29,18 @@ let routes = [
         path: "/editVehicles",
         name: "EditVehicles",
         component: EditVehicles,
+        exact: true,
+    },
+    {
+        path: "/viewReports",
+        name: "ViewReports",
+        component: ViewReports,
+        exact: true,
+    },
+    {
+        path: "/vehicleRequest",
+        name: "VehicleRequest",
+        component: VehicleRequest,
         exact: true,
     }
 
