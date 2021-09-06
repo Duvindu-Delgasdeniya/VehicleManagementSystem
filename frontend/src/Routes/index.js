@@ -1,22 +1,36 @@
-import Dashboard from '../App';
+import AddVehicle from '../compornents/AddVehicle';
+import DisplayAllVehicles from '../compornents/DisplayAllVehicles';
+import EditVehicles from '../compornents/EditVehicles';
+import Home from '../compornents/Home/Home';
 
-import SendRequestfrom '../../';
 
 let routes = [
 
     {
         path: "/",
-        name: "Dashboard",
-        component: Dashboard,
+        name: "Home",
+        component: Home,
         exact: true,
     },
     {
-        path: "/vehicle/add",
+        path: "/addvehicle",
         name: "AddVehicle",
         component: AddVehicle,
         exact: true,
+    },
+    {
+        path: "/displayAllVehicles",
+        name: "DisplayAllVehicles",
+        component: DisplayAllVehicles,
+        exact: true,
+    },
+    {
+        path: "/editVehicles",
+        name: "EditVehicles",
+        component: EditVehicles,
+        exact: true,
     }
-    
+
 ];
 
 export default routes;

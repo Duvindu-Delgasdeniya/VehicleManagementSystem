@@ -3,7 +3,8 @@ import image1 from '../img/car1.png';
 import image2 from '../img/car2.png';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css';
-import '../Home/Home.css'
+import '../Home/Home.css';
+import Header from '../../compornents/header';
 
 
 export default function AddVehicle() {
@@ -11,6 +12,7 @@ export default function AddVehicle() {
 
     return (
         <div>
+          <Header/>
 
             {/* <div style="background-image:{image1};"> */}
             <div className="hero" style={{ backgroundImage: `url(${image1})` }}>

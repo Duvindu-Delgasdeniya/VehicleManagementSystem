@@ -1,18 +1,18 @@
 
 import './App.css';
-import Header from './compornents/header';
-import AddVehicle from './compornents/AddVehicle';
-import EditVehicles from './compornents/EditVehicles';
-import DisplayAllVehicles from './compornents/DisplayAllVehicles';
-import Home from './compornents/Home/Home';
+// import Header from './compornents/header';
+// import AddVehicle from './compornents/AddVehicle';
+// import EditVehicles from './compornents/EditVehicles';
+// import DisplayAllVehicles from './compornents/DisplayAllVehicles';
+// import Home from './compornents/Home/Home';
+import Router from './Routes/Router'
 
-import {BrowserRouter as Router, Route} from "react-router-dom"
-
+import React from 'react';
 
 function App() {
   return (
     <Router>
-        <div >
+        {/* <div >
 
           <Header/>
     
@@ -23,7 +23,7 @@ function App() {
 
           
 
-        </div>
+        </div> */}
     </Router>
   );
 }

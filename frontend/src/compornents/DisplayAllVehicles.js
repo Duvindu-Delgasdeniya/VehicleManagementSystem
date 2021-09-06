@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios';
+import Header from '../compornents/header';
 
 
 
@@ -27,6 +28,7 @@ let Count = 0
 
     return(
         <div>
+            <Header />
             <br/>
             <h1>All Vehicles </h1>
 
