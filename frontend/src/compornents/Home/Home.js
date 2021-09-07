@@ -1,5 +1,5 @@
 import React from 'react';
-import image1 from '../img/car1.png';
+import image1 from '../img/Car3.jpg';
 import image2 from '../img/car2.png';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css';
@@ -35,7 +35,37 @@ export default function AddVehicle() {
                     <div class="row align-items-center;">
                       <div class="col-lg-2"></div>
                       <div class="col-lg-7">
-                        <div class="border" >
+                        <div class="Plan-box">
+                          <h2>Plan Your Ride</h2>
+                          <form>
+                            <div class="user-box">
+                              <input type="text" name="startingLocation" required="" />
+                              <label>Starting Location</label>
+                            </div>
+                            <div class="user-box">
+                              <input type="text" name="" required="" />
+                              <label>End Location</label>
+                            </div>
+                            <div class="user-box">
+                              <select name="cars" id="cars">
+                                <option value="Motorbike">Motorbike</option>
+                                <option value="Car">Car</option>
+                                <option value="Bus">Bus</option>
+                                <option value="Van">Van</option>
+                              </select>
+
+                            </div>
+
+                            <a href="#">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              Book Now
+                            </a>
+                          </form>
+                        </div>
+                        {/* <div class="border" >
                           <div class=" aln-div col-lg-12 ">
 
                             <div class="btn-div col-lg-12"> <h4>Plan Your Ride </h4></div>
@@ -73,7 +103,7 @@ export default function AddVehicle() {
                             </div>
 
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>
@@ -191,15 +221,15 @@ export default function AddVehicle() {
 
           <p class="footer-links">
             <a href="#">Home</a>
-            
+
             <a href="#">Blog</a>
-            
+
             <a href="#">Pricing</a>
-            
+
             <a href="#">About</a>
-            
+
             <a href="#">Faq</a>
-            
+
             <a href="#">Contact</a>
           </p>
 
@@ -229,7 +259,7 @@ export default function AddVehicle() {
 
           <p class="footer-company-about">
             <span>About the SafeRide</span>
-            වාහන කුලියට දෙනු ලැබේ ! 
+            වාහන කුලියට දෙනු ලැබේ !
           </p>
 
           <div class="footer-icons">
