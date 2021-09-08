@@ -36,6 +36,8 @@ app.use("/employee",employeeRouter);
 const requestRouter = require("./routes/requests.js");
 app.use("/request",requestRouter);
 
+const statVehical = require("./routes/stats.route");
+app.use("/vehicalStat",statVehical);
 
 
 app.listen(PORT,() => {
