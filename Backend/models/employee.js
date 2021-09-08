@@ -12,18 +12,23 @@ const employeeschema = new Schema({
         required:true
 
     },
+    
+    Age :{
+        type :String,
+        required:true
+    },
 
     Address :{
         type :String,
         required:true
     },
 
-    NICNumber:{
+    NICNumber :{
         type :String,
         required:true
     },
 
-    Gender:{
+    Gender :{
         type :String,
         required:true
     },
