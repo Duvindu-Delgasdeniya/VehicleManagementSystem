@@ -39,6 +39,9 @@ app.use("/request",requestRouter);
 const statVehical = require("./routes/stats.route");
 app.use("/vehicalStat",statVehical);
 
+const vehicleSide = require("./routes/VehicleSide.route");
+app.use("/vehicleSide",vehicleSide);
+
 
 app.listen(PORT,() => {
     console.log(`server is up and running on port number: ${PORT} `);
