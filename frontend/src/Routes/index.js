@@ -5,6 +5,7 @@ import Home from '../compornents/Home/Home';
 import VehicleRequest from '../compornents/VehicleRequest/VehicleRequest';
 import ViewReports from '../compornents/ViewReports/ViewReports';
 import SendRequests from '../compornents/SendRequests';
+import SignIn from '../compornents/Register/SignIn';
 
 let routes = [
 
@@ -48,6 +49,12 @@ let routes = [
         path: "/sendRequests",
         name: "SendRequests",
         component: SendRequests,
+        exact: true,
+    },
+    {
+        path: "/signIn",
+        name: "SignIn",
+        component: SignIn,
         exact: true,
     }
 

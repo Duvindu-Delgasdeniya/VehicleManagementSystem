@@ -1,5 +1,6 @@
 import React from "react";
 import logo from '../images/logo.png';
+import '../compornents/Header/Header.css'
 
 
 function Header() {
@@ -29,8 +30,8 @@ return(
         <a class="nav-link" href="#ViewReports">View Reports</a>
       </li>
     </ul>
-    
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+    <spanbHeder><a href="#signIn"></a></spanbHeder>
+      {/* <button class="btn btn-outline-success my-2 my-sm-0" href="#ViewReports" type="submit">Login</button> */}
    
   </div>
 </nav>
