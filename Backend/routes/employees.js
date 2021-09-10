@@ -2,10 +2,13 @@ const router = require("express").Router();
 let employee = require("../models/employee");
 
 // adding a employee
+
 router.route("/add").post((req,res) => {
 
 
     const EmployeeName = req.body.EmployeeName;
+
+    const Age = Number(req.body.Age);
 
     const Address = req.body.Address;
 
@@ -19,22 +22,24 @@ router.route("/add").post((req,res) => {
 
     const JobType = req.body.JobType;
 
+
     const newEmployee = new employee({
+     
+        EmployeeName, 
 
-         
-    EmployeeName, 
+        Age,
 
-    Address,
+        Address,
 
-    NICNumber,
+        NICNumber,
 
-    Gender,
+        Gender,
 
-    Email,
+        Email,
 
-    MobileNumber,
+        MobileNumber,
 
-    JobType
+        JobType
 
     })
 
@@ -69,11 +74,13 @@ router.route("/").get( (req,res) => {
 router.route("/update/:id").put(async(req,res) => {
 
     let employeeId =req.params.id;
-    const {  EmployeeName, Address, NICNumber, Gender, Email, MobileNumber, JobType } = req.body;
+    const {  EmployeeName, Age, Address, NICNumber, Gender, Email, MobileNumber, JobType } = req.body;
 
     const updateEmployee = {
 
         EmployeeName, 
+
+        Age,
 
         Address,
     
@@ -101,6 +108,8 @@ router.route("/update/:id").put(async(req,res) => {
 
     })
 })
+
+//deleting a employee
 
 router.route("/delete/:id").delete(async (req,res) =>{
 
