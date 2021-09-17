@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from "axios";
+import axios from 'axios';
 
 export default function AllEmployees() {
 
@@ -10,7 +10,7 @@ export default function AllEmployees() {
         function getEmployees(){
 
             axios.get("http://localhost:8070/employee/").then((res) => {
-                
+
                 setEmployees(res.data);
             }).catch((err) => {
                 alert(err.message);
