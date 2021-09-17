@@ -8,8 +8,8 @@ function Header() {
 return(
  
   <nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"> <img src={logo} alt="Logo" /> </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <a class="navbar-brand" href="#"> <img src={logo} alt="Logo" /> </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 

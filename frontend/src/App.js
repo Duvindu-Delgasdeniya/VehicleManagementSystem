@@ -5,6 +5,8 @@ import './App.css';
 // import EditVehicles from './compornents/EditVehicles';
 // import DisplayAllVehicles from './compornents/DisplayAllVehicles';
 // import Home from './compornents/Home/Home';
+import AddEmployee from './compornents/AddEmployee';
+import AllEmployees from './compornents/AllEmployees';
 import Router from './Routes/Router'
 
 import React from 'react';
